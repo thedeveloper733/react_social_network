@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import withStyles from "@material-ui/core/styles/withStyles";
-import Link from "react-router-dom/Link";
+import { Link } from "react-router-dom";
 
 // MUI Stuff
 import Card from "@material-ui/core/Card";
@@ -11,7 +11,15 @@ import Typography from "@material-ui/core/Typography";
 
 const styles = {
   card: {
-    display: "flex"
+    display: "flex",
+    marginBottom: 20
+  },
+  image: {
+    minWidth: 200
+  },
+  content: {
+      padding: 25,
+      objectFit: 'cover'
   }
 };
 
