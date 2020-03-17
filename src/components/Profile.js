@@ -10,6 +10,8 @@ import { logoutUser, uploadImage } from "../redux/actions/userActions";
 
 import dayjs from "dayjs";
 
+import EditDetails from "../components/EditDetails";
+
 // MUI Stuff
 import Button from "@material-ui/core/Button/Button";
 import Paper from "@material-ui/core/Paper/Paper";
@@ -155,6 +157,7 @@ class Profile extends Component {
                 <KeyboardReturn color="primary" />
               </IconButton>
             </Tooltip>
+            <EditDetails />
           </div>
         </Paper>
       ) : (
