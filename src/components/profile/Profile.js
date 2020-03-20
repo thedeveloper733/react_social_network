@@ -6,12 +6,12 @@ import withStyles from "@material-ui/core/styles/withStyles";
 
 // Redux stuff
 import { connect } from "react-redux";
-import { logoutUser, uploadImage } from "../redux/actions/userActions";
+import { logoutUser, uploadImage } from "../../redux/actions/userActions";
 
 import dayjs from "dayjs";
 
-import EditDetails from "../components/EditDetails";
-import MyButton from "../util/MyButton";
+import EditDetails from "./EditDetails";
+import MyButton from "../../util/MyButton";
 
 // MUI Stuff
 import Button from "@material-ui/core/Button/Button";

@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 
 // Redux stuff
 import { connect } from "react-redux";
-import { getScream } from "../redux/actions/dataActions";
+import { getScream } from "../../redux/actions/dataActions";
 
 import PropTypes from "prop-types";
 import withStyles from "@material-ui/core/styles/withStyles";
 
 import dayjs from "dayjs";
 
-import MyButton from "../util/MyButton";
+import MyButton from "../../util/MyButton";
 import LikeButton from "./LikeButton";
 
 // MUI stuff

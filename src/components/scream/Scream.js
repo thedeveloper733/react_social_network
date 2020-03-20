@@ -8,9 +8,9 @@ import relativeTime from "dayjs/plugin/relativeTime";
 
 import PropTypes from "prop-types";
 
-import MyButton from "../util/MyButton";
-import DeleteScream from "../components/DeleteScream";
-import ScreamDialog from "../components/ScreamDialog";
+import MyButton from "../../util/MyButton";
+import DeleteScream from "./DeleteScream";
+import ScreamDialog from "./ScreamDialog";
 import LikeButton from "./LikeButton";
 
 // MUI Stuff

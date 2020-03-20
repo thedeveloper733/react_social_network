@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 // Redux stuff
 import { connect } from "react-redux";
-import { likeScream, unlikeScream } from "../redux/actions/dataActions";
+import { likeScream, unlikeScream } from "../../redux/actions/dataActions";
 
 import PropTypes from "prop-types";
 
-import MyButton from "../util/MyButton";
+import MyButton from "../../util/MyButton";
 
 // Icons
 import FavoriteIcon from "@material-ui/icons/Favorite";
