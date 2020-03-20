@@ -12,6 +12,7 @@ import dayjs from "dayjs";
 
 import MyButton from "../../util/MyButton";
 import LikeButton from "./LikeButton";
+import Comments from "./Comments";
 
 // MUI stuff
 import Dialog from "@material-ui/core/Dialog";
@@ -27,10 +28,6 @@ import ChatIcon from "@material-ui/icons/Chat";
 
 const styles = theme => ({
   ...theme,
-  invisibleSeparator: {
-    border: "none",
-    margin: 4
-  },
   profileImage: {
     maxWidth: 200,
     height: 200,
@@ -79,7 +76,8 @@ export class ScreamDialog extends Component {
         likeCount,
         commentCount,
         userImage,
-        userHandle
+        userHandle,
+        comments
       },
       UI: { loading }
     } = this.props;
@@ -115,6 +113,8 @@ export class ScreamDialog extends Component {
           </MyButton>
           <span>{commentCount} Comments</span>
         </Grid>
+        <hr className={classes.visibleSeparator}/>
+        <Comments comments={comments}/>
       </Grid>
     );
 
